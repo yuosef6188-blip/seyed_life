@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seyed-Life 😂</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma, sans-serif;
+    background: linear-gradient(135deg, #111827, #312e81, #581c87);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 450px;
+    padding: 35px 22px;
+    border: 1px solid #ffffff35;
+    border-radius: 25px;
+    background: #ffffff15;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 60px #0006;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 19px;
+    line-height: 2;
+}
+
+button {
+    margin-top: 20px;
+    padding: 17px 35px;
+    border: none;
+    border-radius: 50px;
+    background: #facc15;
+    color: #111827;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: #fde047;
+}
+
+#result {
+    display: none;
+    margin-top: 30px;
+    animation: appear 1s ease;
+}
+
+#result h2 {
+    font-size: 27px;
+    line-height: 1.8;
+    color: #fde047;
+}
+
+.emoji {
+    font-size: 42px;
+    animation: shake .5s infinite;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0%,100% { transform: rotate(-8deg); }
+    50% { transform: rotate(8deg); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>😂 سید جان 😂</h1>
+
+    <p>
+        یه چیزی برات آماده کردم!
+        <br>
+        روی دکمه زیر کلیک کن ببین چی میشه 👇
+    </p>
+
+    <button onclick="showMessage()">
+        کلیک کن سید 🤣
+    </button>
+
+    <div id="result">
+        <div class="emoji">💀🤣😭</div>
+
+        <h2>
+            زیر فشار زندگی
+            <br>
+            پاره شدیم! 🤣😭💔
+        </h2>
+
+        <p>
+            سید اینم از زندگی ما 😂
+            <br>
+            دیگه چیزی برای گفتن نداریم 💀
+        </p>
+
+        <div class="emoji">😂😂😂</div>
+    </div>
+
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("result").style.display = "block";
+    document.querySelector("button").innerText = "دیگه دیر شده سید 💀";
+}
+</script>
+
+</body>
+</html>
